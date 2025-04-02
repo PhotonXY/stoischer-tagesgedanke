@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stoischer Tagesgedanke</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h2 {
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 16px;
+      margin-top: 0;
+    }
+    .gedanke {
+      margin-top: 20px;
+      font-size: 18px;
+      font-style: italic;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <h2>🌱 Tagesgedanke – Kaizen trifft Stoizismus</h2>
+  <p>Kontinuierliche Verbesserung beginnt bei unseren Gedanken.<br>
+  Lass dich täglich inspirieren durch kurze Weisheiten und stoische Prinzipien, die dir helfen, achtsam zu arbeiten, klarer zu denken und gelassener zu leben.</p>
+
+  <div class="gedanke" id="stoischerGedanke"></div>
+
+  <script>
+    const gedanken = [
+      "Ein Ziel ohne Weg ist wie ein Paket ohne Adresse – es kommt nie an. – Seneca",
+      "Nicht die Dinge selbst beunruhigen uns, sondern die Ansichten, die wir von den Dingen haben. – Epiktet",
+      "Glücklich ist nicht, wer viel besitzt, sondern wer wenig braucht. – Seneca",
+      "Beginne jeden Tag mit der Überzeugung, dass du allem, was kommt, gewachsen bist. – Marc Aurel",
+      "Freiheit ist die einzige würdige Belohnung, die das Leben uns schenkt. – Seneca",
+      "Du hast Macht über deinen Geist, nicht über äussere Ereignisse. Erkenne dies, und du findest Stärke. – Marc Aurel",
+      "Wer seinen Zorn besiegt, besiegt seinen grössten Feind. – Epiktet",
+      "Das Leben ist kurz; weniger reden, mehr tun – darin liegt dein Weg zur Zufriedenheit. – Marc Aurel",
+      "Schwierigkeiten stärken den Geist, wie Arbeit den Körper stärkt. – Seneca",
+      "Gelassenheit entsteht, indem du akzeptierst, was ist, und das Beste daraus machst. – Epiktet",
+      "Handle stets so, als ob du bereits am Ziel wärst. – Angelehnt an Marc Aurel",
+      "Die beste Rache ist, nicht wie dein Gegner zu sein. – Marc Aurel",
+      "Was heute schwer ist, wird morgen zur Stärke. – Stoisch inspiriert",
+      "Disziplin ist die Entscheidung, sich selbst ernst zu nehmen. – Angelehnt an Seneca",
+      "Nicht jammern – handeln. Nicht klagen – lernen. – Stoisches Prinzip",
+      "Kontrolle beginnt bei dir selbst – nicht bei den Umständen. – Epiktet",
+      "Weniger wollen, mehr sein. – Stoische Grundhaltung",
+      "Es ist nicht zu wenig Zeit, die wir haben, sondern zu viel, die wir vergeuden. – Seneca",
+      "Jeder Tag ist ein neuer Anfang – mach ihn zu deinem. – Stoisch inspiriert",
+      "Grosser Geist zeigt sich in Gelassenheit, nicht in Lautstärke. – Angelehnt an Seneca",
+      "Ein ruhiger Geist ist ein mächtiger Verbündeter. – Stoisch inspiriert",
+      "Was du heute übst, zeigt sich morgen in deiner Haltung. – Kaizen & Stoizismus",
+      "Das Leben belohnt, wer geduldig und beharrlich ist. – Marc Aurel",
+      "Sei streng mit dir, aber nachsichtig mit anderen. – Epiktet",
+      "Die Qualität deines Lebens hängt von der Qualität deiner Gedanken ab. – Marc Aurel",
+      "Nutze Widerstände als Trainingspartner deines Charakters. – Stoisches Bild",
+      "Wer weiss, was er kontrollieren kann, lebt freier. – Epiktet",
+      "Mach das Beste aus dem, was ist – nicht aus dem, was sein sollte. – Stoisch inspiriert",
+      "Wandle Frustration in Fokus um. – Kaizen trifft Stoizismus",
+      "Der Weg zur Meisterschaft beginnt mit einem Schritt – jeden Tag neu. – Kaizen-Prinzip"
+    ];
+
+    const heute = new Date();
+    const index = heute.getDate() % gedanken.length;
+
+    document.getElementById("stoischerGedanke").innerText = gedanken[index];
+  </script>
+</body>
+</html>

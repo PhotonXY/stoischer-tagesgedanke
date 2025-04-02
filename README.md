@@ -1,0 +1,1 @@
+# stoischer-tagesgedanke
